@@ -1,0 +1,15 @@
+/* Стили сканера */
+.qr-scanner-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
+}
+
+.qr-scanner-output-field{
+    padding: 20px;
+}
+.qr-scanner-output-field span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
