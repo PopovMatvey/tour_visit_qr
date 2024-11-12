@@ -13,11 +13,7 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className="App">
-        <MainContent />
-      </div >
-      <Footer />
+    <MainContent />
     </>
   );
 }

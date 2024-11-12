@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:*/shop
+Disallow:*/admin
+
+Sitemap: https://bestchrome.ru/6034922_8.xml
