@@ -16,7 +16,18 @@
 }
 
 /*  */
-@font-face{
+@font-face {
     font-family: 'fram';
     src: url("../fonts/framd/framd.otf");
+}
+
+/* Monserrat */
+@font-face {
+    font-family: 'Monserat_custom';
+    src: url("../fonts/Monserat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Monserat_Bold';
+    src: url("../fonts/Monserat/Montserrat-Bold.ttf");
 }
