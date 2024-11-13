@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    /* border: 1px solid black; */
     padding: 5%;
 }
 
@@ -12,16 +13,17 @@
     top: 0;
     left: 0;
     width: 100%;
+    /* border: 1px solid black; */
     /* height: 100%; */
     z-index: 0;
 }
 
-@media screen and (max-width:991px) {
+/* @media screen and (max-width:991px) {
     .common-container video {
         width: auto;
         height: 100%;
     }
-}
+} */
 
 .content-container {
     position: relative;
@@ -77,6 +79,10 @@
 
 .contacts-container a {
     width: 25%;
+}
+
+.contacts-container a img{
+    width: 100%;
 }
 
 /*Подвал*/

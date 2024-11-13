@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import "./css/style.css";
 import logoHref from "../../images/logo.png";
 import WhatsUpHref from "../../images/social/whatsup.png";
 import InstHref from "../../images/social/instagram.png";
 import TgHref from "../../images/social/telegramm.png";
 import VkHref from "../../images/social/vk.png";
-import firstOfficeHref from "../../images/SliderHouses/first.jpg";
-import secondOfficeHref from "../../images/SliderHouses/second.jpg";
-import thirdOfficeHref from "../../images/SliderHouses/third.jpg";
-import { Slider } from "../Slider";
 import { ImageSlider } from "../ImageSlider";
+import "./css/style.css";
 
 
 export function MainContent() {
