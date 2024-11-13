@@ -9,7 +9,7 @@ app.use(express.json());                                    // use json for requ
 app.use(cors());
 
 /*Varibles*/
-const PORT_APP = 2002;                      // app port
+const PORT_APP = 2006;                      // app port
 const urlRequest = '/api/contacts';         // url request api
 const arrayPartnersSlider = getFiles('./static/images/Slider/Parnters/');
 // const arrayImageSlayderPortfolio = getFiles('./static/media/images/');

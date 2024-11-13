@@ -25,7 +25,7 @@ export function MainContent() {
         <>
             <div className="common-container">
                 <video autoPlay loop muted >
-                    <source src="./videos/background.MP4" type="video/MP4"/> 
+                    <source src="./videos/background.MP4" type="video/MP4" />
                 </video>
                 <div className="content-container">
                     {/* Шапка */}
@@ -49,7 +49,7 @@ export function MainContent() {
                             <input type="checkbox" defaultChecked={checkboxValue} onChange={handlerCheckboxItem} />
                         </div>
                     </div>
-                    {/* Карусеьль с контактами */}
+                    {/* Карусель с контактами */}
                     <div className="contacts-container">
                         <a href="https://wa.me/+7930877633">
                             <img src={WhatsUpHref} alt="WhatsUp" />
@@ -67,26 +67,13 @@ export function MainContent() {
                     {/* Подвал */}
                     <div className="footer-container">
                         <h3>Нащи офисы</h3>
-                        {/* <div className="office-container">
-                            <a href="#">
-                                <img src={firstOfficeHref} alt="first" />
-                            </a>
-                            <a href="#">
-                                <img src={secondOfficeHref} alt="second" />
-                            </a>
-                            <a href="#">
-                                <img src={thirdOfficeHref} alt="third" />
-                            </a>
-                        </div> */}
-                        {/* <ImageSlider items={[
-                            '/images/Portfolio/collection.jpg',
-                            '/images/Portfolio/double_headed_eagle.jpg',
-                            './images/Portfolio/helmet.jpg',
-                            './images/Portfolio/military_helmet.jpg',
-                            './images/Portfolio/pony.jpg',
-                            './images/Portfolio/swan.jpg',
-                            './images/Portfolio/trunk.jpg',
-                        ]} /> */}
+                        <div className="slider-container">
+                            <ImageSlider items={[
+                                './images/SliderHouses/first.jpg',
+                                './images/SliderHouses/second.jpg',
+                                './images/SliderHouses/third.jpg',
+                            ]} />
+                        </div>
                     </div>
                 </div>
             </div>
