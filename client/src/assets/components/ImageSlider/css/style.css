@@ -18,13 +18,26 @@
 .carousel-item {
   display: inline-flex;
   align-items: center;
-  width: 300px;
+  width: 70%;
+  max-height: 700px;
   justify-content: center;
   background-color: #fff;
 }
 
+.carusel-href{
+  min-width: 300px;
+  width: 70%;
+}
+
 .carousel-img {
-  width: 300px;
+  min-width: 300px;
+  width: 70%;
+  max-height: 700px;
+}
+
+
+.carousel-img a{
+  border: 1px solid blue;
 }
 
 /* Кнопки */
