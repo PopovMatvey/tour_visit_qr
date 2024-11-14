@@ -97,8 +97,6 @@ export function MainContent() {
                                 РТА 0012871 в Едином федеральном реестре турагентов
                             </span>
                         </div>
-                        <input type="checkbox" id="switch" className="checkbox" />
-                        <label htmlFor="switch"></label>
                     </div>
                 </div>
             </div>
