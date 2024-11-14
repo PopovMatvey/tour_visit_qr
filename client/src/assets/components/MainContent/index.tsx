@@ -6,16 +6,11 @@ import TgHref from "../../images/social/telegramm.png";
 import VkHref from "../../images/social/vk.png";
 import { ImageSlider } from "../ImageSlider";
 import "./css/style.css";
+import "./css/checkbox.css";
 
 
 export function MainContent() {
     const [checkboxValue] = useState(true);
-
-    const handlerCheckboxItem = (event: any) => {
-        // return;, SetCheckboxValue
-        // console.log("fiosdnfdio");
-        // SetCheckboxValue(true);
-    }
 
     return (
         <>
@@ -31,21 +26,24 @@ export function MainContent() {
                             <a href="https://tourstore.online/">Tourstore.online</a>
                         </h1>
                         <a href="https://tourstore.online/"><img src={logoHref} alt="Логотип" /></a>
-                        
+
                     </div>
                     {/* Блок с checkbox-сами */}
                     <div className="checkbox-container">
                         <div className="checkbox-container_item">
                             <span>Более 40 тысяч довольных туристов</span>
-                            <input type="checkbox" defaultChecked={checkboxValue} onChange={handlerCheckboxItem} />
+                            <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
+                            <label htmlFor="switch"></label>
                         </div>
                         <div className="checkbox-container_item">
                             <span>Опыт в туризме более 12 лет</span>
-                            <input type="checkbox" defaultChecked={checkboxValue} onChange={handlerCheckboxItem} />
+                            <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
+                            <label htmlFor="switch"></label>
                         </div>
                         <div className="checkbox-container_item">
                             <span>На связи 24/7</span>
-                            <input type="checkbox" defaultChecked={checkboxValue} onChange={handlerCheckboxItem} />
+                            <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
+                            <label htmlFor="switch"></label>
                         </div>
                     </div>
                     {/* Кнопки*/}
@@ -99,6 +97,8 @@ export function MainContent() {
                                 РТА 0012871 в Едином федеральном реестре турагентов
                             </span>
                         </div>
+                        <input type="checkbox" id="switch" className="checkbox" />
+                        <label htmlFor="switch"></label>
                     </div>
                 </div>
             </div>
