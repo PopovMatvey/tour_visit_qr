@@ -6,6 +6,10 @@
     padding: 5%;
 }
 
+.common-container div {
+    max-width: 600px;
+}
+
 .common-container video {
     position: fixed;
     top: 0;
@@ -14,7 +18,7 @@
     z-index: 0;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:715px) {
     .common-container video {
         width: auto;
         height: 150vh;
@@ -41,7 +45,14 @@
 
 .header_container h2 {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 13px;
+    color: #555042;
+}
+
+@media screen and (min-width:490px) {
+    .header_container h2 {
+        font-size: 16px;
+    }
 }
 
 .header_container img {
@@ -58,12 +69,61 @@
 
 .checkbox-container_item {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
     background: #FFF !important;
     border-radius: 5px;
     padding: 15px 10px;
     max-width: 991px;
+    gap: 10px;
     width: 100%;
+}
+
+.checkbox-container_item li {
+    /* position: relative; */
+    list-style: none;
+    padding: 0px 5px;
+}
+
+/* .checkbox-container_item li::before {
+    content: '✔';
+    padding-right: 5px;
+    color: #2375CE;
+    font-weight: bold;
+    animation: appearance 2s ease;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
+
+@keyframes appearance {
+    /* 0% {
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        height: 1.75em;
+        opacity: 1;
+    } */
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+      }
+      20% {
+        height: 0;
+        width: 1.75em;
+        opacity: 1;
+      }
+      40% {
+        height: 3.5em;
+        width: 1.75em;
+        opacity: 1;
+      }
+      100% {
+        height: 3.5em;
+        width: 1.75em;
+        opacity: 1;
+      }
 }
 
 /* Карусель с контактами */
@@ -91,7 +151,7 @@
     line-height: 20px;
 }
 
-.footer-container h3{
+.footer-container span {
     font-family: Monserat_Bold;
 }
 
@@ -127,10 +187,23 @@
     border-radius: 10px;
     color: #FFF;
     text-transform: uppercase;
+    font-size: 9px;
     transition: .5s all;
 }
 
-.flex a:visited{
+@media screen and (min-width:490px) {
+    .flex a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:730px) {
+    .flex a {
+        font-size: 18px;
+    }
+}
+
+.flex a:visited {
     color: #FFF;
 }
 

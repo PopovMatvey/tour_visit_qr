@@ -7,6 +7,7 @@ import VkHref from "../../images/social/vk.png";
 import { ImageSlider } from "../ImageSlider";
 import "./css/style.css";
 import "./css/checkbox.css";
+import "./css/svg_mark.css";
 
 
 export function MainContent() {
@@ -31,19 +32,31 @@ export function MainContent() {
                     {/* Блок с checkbox-сами */}
                     <div className="checkbox-container">
                         <div className="checkbox-container_item">
-                            <span>Более 40 тысяч довольных туристов</span>
-                            <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
-                            <label htmlFor="switch"></label>
+                            <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                            <li>Более 40 тысяч довольных туристов</li>
+                            {/* <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
+                            <label htmlFor="switch"></label> */}
                         </div>
                         <div className="checkbox-container_item">
-                            <span>Опыт в туризме более 12 лет</span>
-                            <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
-                            <label htmlFor="switch"></label>
+                            <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                            <li>Опыт в туризме более 12 лет</li>
+                            {/* <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
+                            <label htmlFor="switch"></label> */}
                         </div>
                         <div className="checkbox-container_item">
-                            <span>На связи 24/7</span>
-                            <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
-                            <label htmlFor="switch"></label>
+                            <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                            <li>На связи 24/7</li>
+                            {/* <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
+                            <label htmlFor="switch"></label> */}
                         </div>
                     </div>
                     {/* Кнопки*/}
@@ -77,16 +90,16 @@ export function MainContent() {
                         <div className="slider-container">
                             <ImageSlider items={[
                                 {
-                                    image: './images/SliderHouses/first.jpg',
-                                    href: 'https://tourstore.online/contacts/murom/anex/',
+                                    image: './images/SliderHouses/third.jpg',
+                                    href: "https://tourstore.online/contacts/kasimov/FunSun/",
                                 }
                                 , {
                                     image: './images/SliderHouses/second.jpg',
                                     href: "https://tourstore.online/contacts/murom/pegas/",
                                 },
                                 {
-                                    image: './images/SliderHouses/third.jpg',
-                                    href: "https://tourstore.online/contacts/kasimov/FunSun/",
+                                    image: './images/SliderHouses/first.jpg',
+                                    href: 'https://tourstore.online/contacts/murom/anex/',
                                 }
                             ]} />
                         </div>
@@ -94,7 +107,7 @@ export function MainContent() {
                             <span>
                                 ООО "Турсистемы" <br />
                                 ОГРН: 1136226000151 <br />
-                                РТА 0012871 в Едином федеральном реестре турагентов
+                                Реестровый номер 0012871 в едином реестре турагентов
                             </span>
                         </div>
                     </div>
