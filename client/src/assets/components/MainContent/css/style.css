@@ -1,4 +1,5 @@
 /* Стили основного контента */
+
 .common-container {
     display: flex;
     justify-content: center;
@@ -28,10 +29,11 @@
 .content-container {
     position: relative;
     z-index: 1;
-    width: 85%;
+    width: 90%;
 }
 
 /*Шапка*/
+
 .header_container {
     text-align: center;
 }
@@ -49,8 +51,8 @@
 }
 
 .header_container img {
-    width: 30%;
-    max-width: 100px;
+    width: 85%;
+    /* max-width: 100px; */
 }
 
 .checkbox-container {
@@ -58,19 +60,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    background: rgba(51, 51, 51, 0.5) !important;
 }
 
 .checkbox-container_item {
     display: flex;
-    justify-content: space-between;
-    background: #FFF !important;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
     border-radius: 5px;
-    padding: 15px 10px;
+    gap: 0px 10px;
+    padding: 0px 10px;
     max-width: 600px;
     width: 100%;
 }
 
+.checkbox-container_item input{
+
+}
+
+.checkbox-container_item span {
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFF;
+}
+
 /* Карусель с контактами */
+
 .contacts-container {
     display: flex;
     justify-content: space-around;
@@ -81,11 +98,12 @@
     width: 25%;
 }
 
-.contacts-container a img{
+.contacts-container a img {
     width: 100%;
 }
 
 /*Подвал*/
+
 .footer-container {
     font-family: Monserat_Bold;
     text-align: center;
@@ -94,8 +112,8 @@
     font-size: 18px;
 }
 
-
 /* Карусель с изображениями */
+
 .office-container {
     display: flex;
     justify-content: space-around;

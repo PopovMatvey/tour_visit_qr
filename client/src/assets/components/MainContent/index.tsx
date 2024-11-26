@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoHref from "../../images/logo.png";
+import logoHref from "./image/ExtentedLogo.png";
 import WhatsUpHref from "../../images/social/whatsup.png";
 import InstHref from "../../images/social/instagram.png";
 import TgHref from "../../images/social/telegramm.png";
@@ -26,8 +26,8 @@ export function MainContent() {
                 <div className="content-container">
                     {/* Шапка */}
                     <div className="header_container">
-                        <h2>Мультибрендовая сеть турагенств</h2>
-                        <h1>Tourstore.online</h1>
+                        {/* <h2>Мультибрендовая сеть турагенств</h2>
+                        <h1>Tourstore.online</h1> */}
                         <img src={logoHref} alt="Логотип" />
                     </div>
                     {/* Блок с checkbox-сами */}
