@@ -3,11 +3,13 @@ import React from "react";
 
 // Изображение слайдера (пункт)
 export const CarouselItem = ({ item, width }: any) => {
-  const hrefImage = `${item}`;//${hostName}
+  const hrefImage = `${item.image}`;//${hostName}
 
   return (
     <div className="carousel-item" style={{ width: width }}>
-      <img className="carousel-img" src={hrefImage} alt="Изображение слайдера"/>
+      <a className="carusel-href" href={item.href}>
+        <img className="carousel-img" src={hrefImage} alt="Изображение слайдера" />
+      </a>
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
-import "./css/style.css";
 import { useActiveIndexState } from "./hook/useActiveIndexState";
 import { CarouselItem as SliderlItem } from "./SliderlItem";
 import arrorBack from "./images/arrow-back.png";
 import arrorNext from "./images/arrow-next.png";
+import "./css/style.css";
 
 // Слайдер изображений
 export const ImageSlider = ({ items }: any) => {
@@ -12,9 +12,9 @@ export const ImageSlider = ({ items }: any) => {
   // Обновить индекс
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
-      newIndex = 0;
-    } else if (newIndex >= items.length) {
       newIndex = items.length - 1;
+    } else if (newIndex >= items.length) {
+      newIndex = 0;
     }
 
     setActiveIndex(newIndex);
