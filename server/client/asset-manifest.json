@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d2e7388.css",
-    "main.js": "/static/js/main.bbcc4c72.js",
+    "main.css": "/static/css/main.b5cb02fe.css",
+    "main.js": "/static/js/main.a317dacc.js",
     "static/js/787.fcf432be.chunk.js": "/static/js/787.fcf432be.chunk.js",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.0915f0a8c3367a6d05ec.ttf",
     "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.647f0e61af3a76a138c3.ttf",
     "static/media/BerlinType-Bold.otf": "/static/media/BerlinType-Bold.9dab94178b1737b870ba.otf",
     "static/media/BerlinType-Regular.otf": "/static/media/BerlinType-Regular.1bbba4deb8775ccac9dc.otf",
     "static/media/framd.otf": "/static/media/framd.953badef5157dd688816.otf",
+    "static/media/instagram.png": "/static/media/instagram.a8a295181d9d4fc50589.png",
     "static/media/arrow-back.png": "/static/media/arrow-back.7bfeaed9a467ec62f687.png",
     "static/media/arrow-next.png": "/static/media/arrow-next.65143e3128d4ac816914.png",
-    "static/media/logo.png": "/static/media/logo.8838b5f1476ed7fceb51.png",
+    "static/media/logo.png": "/static/media/logo.9739c330c6f6694aac1d.png",
+    "static/media/vk.png": "/static/media/vk.aeac2e30f5c1f196514a.png",
+    "static/media/lupe.png": "/static/media/lupe.62ea70b6a9f352354a3b.png",
+    "static/media/call.png": "/static/media/call.1486c07ef36226a82766.png",
+    "static/media/youtube.png": "/static/media/youtube.31ad68baa9b11fc2445b.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.f6b7d1ef520ff54a2ae1.png",
     "static/media/Concrete-Regular.otf": "/static/media/Concrete-Regular.fcb1090140aa5427f444.otf",
+    "static/media/telegramm.png": "/static/media/telegramm.f56f1577cfc6c23bcc85.png",
     "index.html": "/index.html",
-    "main.3d2e7388.css.map": "/static/css/main.3d2e7388.css.map",
-    "main.bbcc4c72.js.map": "/static/js/main.bbcc4c72.js.map",
+    "main.b5cb02fe.css.map": "/static/css/main.b5cb02fe.css.map",
+    "main.a317dacc.js.map": "/static/js/main.a317dacc.js.map",
     "787.fcf432be.chunk.js.map": "/static/js/787.fcf432be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d2e7388.css",
-    "static/js/main.bbcc4c72.js"
+    "static/css/main.b5cb02fe.css",
+    "static/js/main.a317dacc.js"
   ]
 }
