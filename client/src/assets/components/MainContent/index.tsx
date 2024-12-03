@@ -93,7 +93,7 @@ export function MainContent() {
                     {/* <div className="contacts-container_text">
                     </div> */}
                     <div className="contacts-container_block">
-                        <span>Всё самое выгодное и нтересное  <br /> в наших сообществах</span>
+                        <span>Всё самое выгодное и интересное  <br /> в наших сообществах</span>
                         <div className="contacts-container">
                             <a href="https://vk.com/tourstore.online">
                                 <img src={VkHref} alt="Vk" />
