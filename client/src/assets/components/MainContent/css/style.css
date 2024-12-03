@@ -308,11 +308,13 @@ span {
 }
 
 .dialog div span {
+    display: inline;
     padding: 10px 0px;
     text-transform: none;
 }
 
 .attributes span{
+    text-align: left;
     text-transform: none;
 }
 
