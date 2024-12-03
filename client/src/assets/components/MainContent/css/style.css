@@ -292,6 +292,7 @@ span {
     justify-content: center;
     align-items: flex-end;
     gap: 0px 5px;
+    padding: 20px 0px;
 }
 
 .dialog img {
@@ -314,7 +315,7 @@ span {
 }
 
 .attributes span{
-    text-align: left;
+    /* text-align: left; */
     text-transform: none;
 }
 
