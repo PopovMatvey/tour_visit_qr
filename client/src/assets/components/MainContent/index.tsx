@@ -68,9 +68,9 @@ export function MainContent() {
                     </div>
                     {/* Кнопки*/}
                     <div className="buttons-container flex">
-                        <a href="tel:88002220633">
+                        <a href="tel:+79308770633">
                             <img src={phone} alt="" />
-                            <span>Позвонить бесплатно</span>
+                            <span>Позвонить</span>
                         </a>
                     </div>
                     <div className="green-buttons">
@@ -95,17 +95,17 @@ export function MainContent() {
                     <div className="contacts-container_block">
                         <span>Всё самое выгодное и нтересное в наших сообществах</span>
                         <div className="contacts-container">
-                            <a href="https://www.youtube.com/@Tourstore.online">
-                                <img src={YouTubeHref} alt="Youtube" />
-                            </a>
                             <a href="https://vk.com/tourstore.online">
                                 <img src={VkHref} alt="Vk" />
+                            </a>
+                            <a href="https://www.instagram.com/tourstore.online">
+                                <img src={InstHref} alt="Inst" />
                             </a>
                             <a href="https://t.me/TourStore_online">
                                 <img src={TgHref} alt="Tg" />
                             </a>
-                            <a href="https://www.instagram.com/tourstore.online">
-                                <img src={InstHref} alt="Inst" />
+                            <a href="https://www.youtube.com/@Tourstore.online">
+                                <img src={YouTubeHref} alt="Youtube" />
                             </a>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ export function MainContent() {
                     {/* Подвал */}
                     <div className="footer-container">
                         <h3>Наши офисы</h3>
-                        <span>У нас три оффлайн офиса, но мы паботаем со всей Россией</span>
+                        <span>У нас три оффлайн офиса, но мы паботаем по всей Россией</span>
                         <div className="slider-container"><ImageSlider items={[
                             {
                                 image: './images/SliderHouses/funsun.png',
