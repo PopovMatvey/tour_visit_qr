@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5cb02fe.css",
-    "main.js": "/static/js/main.a317dacc.js",
+    "main.css": "/static/css/main.a9cfdd3f.css",
+    "main.js": "/static/js/main.de7acb7f.js",
     "static/js/787.fcf432be.chunk.js": "/static/js/787.fcf432be.chunk.js",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.0915f0a8c3367a6d05ec.ttf",
     "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.647f0e61af3a76a138c3.ttf",
@@ -14,18 +14,18 @@
     "static/media/logo.png": "/static/media/logo.9739c330c6f6694aac1d.png",
     "static/media/vk.png": "/static/media/vk.aeac2e30f5c1f196514a.png",
     "static/media/lupe.png": "/static/media/lupe.62ea70b6a9f352354a3b.png",
-    "static/media/call.png": "/static/media/call.1486c07ef36226a82766.png",
+    "static/media/call_icon.png": "/static/media/call_icon.a53fff2338e67ca4d8e7.png",
     "static/media/youtube.png": "/static/media/youtube.31ad68baa9b11fc2445b.png",
-    "static/media/whatsapp.png": "/static/media/whatsapp.f6b7d1ef520ff54a2ae1.png",
     "static/media/Concrete-Regular.otf": "/static/media/Concrete-Regular.fcb1090140aa5427f444.otf",
+    "static/media/whatsapp_icon.png": "/static/media/whatsapp_icon.34fad73740bd95b56aea.png",
     "static/media/telegramm.png": "/static/media/telegramm.f56f1577cfc6c23bcc85.png",
     "index.html": "/index.html",
-    "main.b5cb02fe.css.map": "/static/css/main.b5cb02fe.css.map",
-    "main.a317dacc.js.map": "/static/js/main.a317dacc.js.map",
+    "main.a9cfdd3f.css.map": "/static/css/main.a9cfdd3f.css.map",
+    "main.de7acb7f.js.map": "/static/js/main.de7acb7f.js.map",
     "787.fcf432be.chunk.js.map": "/static/js/787.fcf432be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5cb02fe.css",
-    "static/js/main.a317dacc.js"
+    "static/css/main.a9cfdd3f.css",
+    "static/js/main.de7acb7f.js"
   ]
 }
