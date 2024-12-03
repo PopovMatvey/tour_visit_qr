@@ -123,7 +123,7 @@ export function MainContent() {
                     {/* Подвал */}
                     <div className="footer-container">
                         <h3>Наши офисы</h3>
-                        <span>У нас три оффлайн офиса, но мы паботаем по всей Россией</span>
+                        <span>У нас три оффлайн офиса, но мы работаем по всей Россией</span>
                         <div className="slider-container"><ImageSlider items={[
                             {
                                 image: './images/SliderHouses/funsun.png',
