@@ -128,8 +128,8 @@ export function MainContent() {
                             {
                                 image: './images/SliderHouses/funsun.png',
                                 href: "https://tourstore.online/contacts/kasimov/FunSun/",
-                            }
-                            , {
+                            },
+                            {
                                 image: './images/SliderHouses/pegas.png',
                                 href: "https://tourstore.online/contacts/murom/pegas/",
                             },
@@ -150,18 +150,25 @@ export function MainContent() {
                         <h3>Наши специалисты</h3>
                         {/* <span>У нас три оффлайн офиса, но мы паботаем со всей Россией</span> */}
                         <div className="slider-container">
-                            <ImageSlider items={[
+                            <ImageSlider items={[ 
                                 {
-                                    image: './images/staff/79009666505.png',
-                                    href: "https://wa.me/+79009666505",
-                                }
-                                , {
                                     image: './images/staff/79009666545.png',
                                     href: "https://wa.me/+79009666545",
+                                    name: "Матюшкина",
+                                },
+                                {
+                                    image: './images/staff/79157901990.png',
+                                    href: "https://wa.me/+79157901990",
+                                    name: "Романова",
                                 },
                                 {
                                     image: './images/staff/79028889818.png',
                                     href: "https://wa.me/+79028889818",
+                                    name: "Романова",
+                                },
+                                {
+                                    image: './images/staff/79511027000.png',
+                                    href: "https://wa.me/+79511027000",
                                 },
                                 {
                                     image: './images/staff/79028889828.png',
@@ -176,13 +183,10 @@ export function MainContent() {
                                     href: "https://wa.me/+79107717892",
                                 },
                                 {
-                                    image: './images/staff/79157901990.png',
-                                    href: "https://wa.me/+79157901990",
-                                },
-                                {
-                                    image: './images/staff/79511027000.png',
-                                    href: "https://wa.me/+79511027000",
-                                },
+                                    image: './images/staff/79009666505.png',
+                                    href: "https://wa.me/+79009666505",
+                                }
+                                ,
                             ]} />
                         </div>
                         <div className="attributes">
@@ -190,7 +194,7 @@ export function MainContent() {
                                 ООО "Турсистемы" <br />
                                 ОГРН: 1136226000151 <br />
                                 Реестровый номер 0012871 <br />
-                                в едином реестре турагентов
+                                Едином федеральном реестре турагентов
                             </span>
                         </div>
                     </div>
