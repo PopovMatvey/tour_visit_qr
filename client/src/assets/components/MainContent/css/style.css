@@ -116,11 +116,12 @@ span {
 }
 
 .checkbox-container_item input[type="checkbox"]:checked::after {
-    content: "✔";
+    /* content: "✔"; */
+    content: url("../image/icons8-галочка.svg");
     position: absolute;
-    left: 5px;
-    top: 2px;
-    width: 6px;
+    left: 0px;
+    top: 0px;
+    width: 5px;
     font-size: 15px;
     height: 12px;
     color: #FFF;
@@ -132,12 +133,16 @@ span {
 .checkbox-container_item li {
     /* position: relative; */
     list-style: none;
-    padding: 0px 5px;
+    padding: 0px 15px;
 }
 
 @media screen and (max-width:450px) {
     .checkbox-container_item {
         font-size: 12px;
+    }
+
+    .checkbox-container_item li{
+        padding: 0px 5px;
     }
 }
 
@@ -325,6 +330,7 @@ span {
     display: inline;
     padding: 10px 0px;
     text-transform: none;
+    text-align: left;
 }
 
 .attributes span {

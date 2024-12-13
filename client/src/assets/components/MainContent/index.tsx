@@ -69,6 +69,7 @@ export function MainContent() {
                     {/* Кнопки*/}
                     <div className="buttons-container flex">
                         <a href="tel:+79308770633">
+                            {/* <a href="https://tourstore.online/Tours/"> */}
                             <img src={phone} alt="" />
                             <span>Позвонить</span>
                         </a>
@@ -84,7 +85,9 @@ export function MainContent() {
                         </a>
                     </div>
                     <div className="buttons-container flex">
-                        <a href="tel:88002220633">
+                        {/* tel:88002220633 */}
+                        {/* <a href="./vcf/vcard.vcf"> */}
+                        <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=19MDcqqGbOWB6N8JKR8hel8dgMO0qftul">
                             <img src={user} alt="Сохранить контакт" />
                             <span>Сохранить контакт</span>
                         </a>
@@ -111,7 +114,7 @@ export function MainContent() {
                     </div>
                     {/* Кнопки*/}
                     <div className="buttons-container flex">
-                        <a href="tel:88002220633">
+                        <a href="https://tourstore.online/Tours/">
                             <img src={lupe} alt="" />
                             <span>Найти тур</span>
                         </a>
@@ -123,7 +126,7 @@ export function MainContent() {
                     {/* Подвал */}
                     <div className="footer-container">
                         <h3>Наши офисы</h3>
-                        <span>У нас три оффлайн офиса, <br /> но мы роботаем по всей Россией</span>
+                        <span>У нас три оффлайн офиса, <br /> но мы роботаем по всей России</span>
                         <div className="slider-container"><ImageSlider items={[
                             {
                                 image: './images/SliderHouses/funsun.png',
@@ -150,7 +153,7 @@ export function MainContent() {
                         <h3>Наши специалисты</h3>
                         {/* <span>У нас три оффлайн офиса, но мы паботаем со всей Россией</span> */}
                         <div className="slider-container">
-                            <ImageSlider items={[ 
+                            <ImageSlider items={[
                                 {
                                     image: './images/staff/79009666545.png',
                                     href: "https://wa.me/+79009666545",
@@ -162,31 +165,35 @@ export function MainContent() {
                                     name: "Романова",
                                 },
                                 {
-                                    image: './images/staff/79028889818.png',
-                                    href: "https://wa.me/+79028889818",
-                                    name: "Романова",
-                                },
-                                {
-                                    image: './images/staff/79511027000.png',
-                                    href: "https://wa.me/+79511027000",
-                                },
-                                {
                                     image: './images/staff/79028889828.png',
                                     href: "https://wa.me/+79028889828",
-                                },
-                                {
-                                    image: './images/staff/79107717890.png',
-                                    href: "https://wa.me/+79107717890",
+                                    name: "Хлебникова",
                                 },
                                 {
                                     image: './images/staff/79107717892.png',
                                     href: "https://wa.me/+79107717892",
+                                    name: "Корнишова",
+                                },
+                                {
+                                    image: './images/staff/79028889818.png',
+                                    href: "https://wa.me/+79028889818",
+                                    name: "Тимофеева",
+                                }, ,
+                                {
+                                    image: './images/staff/79511027000.png',
+                                    href: "https://wa.me/+79511027000",
+                                    name: "Кошкина",
+                                },
+                                {
+                                    image: './images/staff/79107717890.png',
+                                    href: "https://wa.me/+79107717890",
+                                    name: "Товмасян",
                                 },
                                 {
                                     image: './images/staff/79009666505.png',
                                     href: "https://wa.me/+79009666505",
-                                }
-                                ,
+                                    name: "Плукиене",
+                                },
                             ]} />
                         </div>
                         <div className="attributes">
