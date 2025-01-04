@@ -11,11 +11,41 @@ import phone from "../../images/icons/phone.png";
 import user from "../../images/icons/user.png";
 import { ImageSlider } from "../ImageSlider";
 import "./css/style.css";
+// import Slider from "../MobileSlider";
+// import SimpleSlider from "../MobileSlider";
+
+// import { Contacts } from 'react-native-contacts';
+
 // import "./css/checkbox.css";
 // import "./css/svg_mark.css";
 
 export function MainContent() {
     const [checkboxValue] = useState(true);
+
+    // const requestPermission = async () => {
+    //     const granted :any = await Permissions. .contacts.request();
+    //     if (granted === 'granted') {
+    //       // Доступ к контактам разрешен
+    //     } else {
+    //       // Пользователь отказал в доступе
+    //     }
+    //  };
+     
+
+    // function addContact(name :any, phoneNumber :any) {
+    //     Contacts.create({
+    //        displayName: name,
+    //        phoneNumbers: [
+    //           {
+    //              value: phoneNumber,
+    //              type: 'mobile'
+    //           }
+    //        ],
+    //        emailAddresses: [],
+    //        urls: []
+    //     });
+    //  }
+     
 
     return (
         <>
@@ -87,7 +117,9 @@ export function MainContent() {
                     <div className="buttons-container flex">
                         {/* tel:88002220633 */}
                         {/* <a href="./vcf/vcard.vcf"> */}
-                        <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=19MDcqqGbOWB6N8JKR8hel8dgMO0qftul">
+                        <a href="https://tourstore.online/contacts/TourStore.vcf"
+                            // onClick={() => addContact('Иван Иванов', '+79991234567')}    
+                        >
                             <img src={user} alt="Сохранить контакт" />
                             <span>Сохранить контакт</span>
                         </a>
@@ -196,6 +228,7 @@ export function MainContent() {
                                 },
                             ]} />
                         </div>
+                        {/* <SimpleSlider/> */}
                         <div className="attributes">
                             <span>
                                 ООО "Турсистемы" <br />
