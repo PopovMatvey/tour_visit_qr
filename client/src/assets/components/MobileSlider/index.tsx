@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./css/style.css";
@@ -17,25 +17,26 @@ const SimpleSlider = () => {
     };
 
     return (
-        <Slider {...settings}>
-            <div className="slider">
-                <div>
-                    ihbbib
-                    <h3>Slide 1</h3>
-                </div>
-            </div>
-            <div className="slider">
-                <div>
-                    <h3>Slide 2nkln</h3>
-                </div>
-            </div>
-            <div className="slider">
-                <div>
-                    326238
-                    <h3>Slide 3</h3>
-                </div>
-            </div>
-        </Slider>
+        // <Slider {...settings}>
+        //     <div className="slider">
+        //         <div>
+        //             ihbbib
+        //             <h3>Slide 1</h3>
+        //         </div>
+        //     </div>
+        //     <div className="slider">
+        //         <div>
+        //             <h3>Slide 2nkln</h3>
+        //         </div>
+        //     </div>
+        //     <div className="slider">
+        //         <div>
+        //             326238
+        //             <h3>Slide 3</h3>
+        //         </div>
+        //     </div>
+        // </Slider>
+        <></>
     );
 };
 

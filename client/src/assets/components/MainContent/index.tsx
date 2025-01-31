@@ -109,7 +109,7 @@ export function MainContent() {
                             <img src={whatsappIcon} alt="Иконка WhatsApp" />
                             <span>Написать в WhasApp</span>
                         </a>
-                        <a href="#">
+                        <a href="#callbackwidget">
                             <img src={requestCall} alt="Иконка по запросу звонка" />
                             <span>Заказать обратный звонок</span>
                         </a>
