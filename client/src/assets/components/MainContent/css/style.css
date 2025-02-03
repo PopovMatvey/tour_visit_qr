@@ -19,18 +19,34 @@ span {
     max-width: 600px;
 }
 
-.common-container video {
+.common-container>img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* .common-container video {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 0;
-}
+} */
 
 @media screen and (max-width:715px) {
-    .common-container video {
+    /* .common-container video {
         width: auto;
         height: 150vh;
+    } */
+
+    .common-container>img {
+        width: auto;
+        /* width: 100%; */
+        height: 100%;
+        /* height: 150vh; */
     }
 }
 
@@ -89,6 +105,7 @@ span {
     align-items: center;
     border-radius: 5px;
     /* padding: 15px 15px; */
+    padding: 10px !important;
     max-width: 991px;
     gap: 5px;
     width: 100%;
@@ -141,7 +158,7 @@ span {
         font-size: 12px;
     }
 
-    .checkbox-container_item li{
+    .checkbox-container_item li {
         padding: 0px 5px;
     }
 }
@@ -156,6 +173,7 @@ span {
 } */
 
 @keyframes appearance {
+
     /* 0% {
         height: 0;
         opacity: 0;
@@ -170,16 +188,19 @@ span {
         width: 0;
         opacity: 1;
     }
+
     20% {
         height: 0;
         width: 1.75em;
         opacity: 1;
     }
+
     40% {
         height: 3.5em;
         width: 1.75em;
         opacity: 1;
     }
+
     100% {
         height: 3.5em;
         width: 1.75em;

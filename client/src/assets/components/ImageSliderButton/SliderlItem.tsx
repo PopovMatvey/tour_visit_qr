@@ -1,4 +1,5 @@
 import React from "react";
+
 // import { hostName } from "../../data/hostName";
 
 // Изображение слайдера (пункт)
@@ -11,7 +12,7 @@ export const CarouselItem = ({ item, width }: any) => {
         <img className="carousel-img" src={hrefImage} alt="Изображение слайдера" />
         <div className="button-slider">
           <a href="https://tourstore.online/Tours/">
-            {/* <img src={lupe} alt="" /> */}
+          <img src="./images/icons/paper-plane-svgrepo-com.svg" alt="самолёт" />
             <span>Написать сообщение</span>
           </a>
         </div>

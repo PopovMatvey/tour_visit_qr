@@ -10,8 +10,9 @@ import lupe from "../../images/icons/lupe.png";
 import phone from "../../images/icons/phone.png";
 import user from "../../images/icons/user.png";
 import { ImageSlider } from "../ImageSlider";
-import "./css/style.css";
 import { ImageSliderButton } from "../ImageSliderButton";
+import "./css/style.css";
+import { ImageSliderOffice } from "../ImageSliderOffice";
 // import Slider from "../MobileSlider";
 // import SimpleSlider from "../MobileSlider";
 
@@ -51,9 +52,11 @@ export function MainContent() {
     return (
         <>
             <div className="common-container">
-                <video autoPlay loop muted >
+                {/* <video autoPlay loop muted >
                     <source src="./videos/background.MP4" type="video/MP4" />
-                </video>
+                </video> */}
+                <img src="./images/background/beautifult_sky.jpg" alt="Фон" />
+                
                 <div className="content-container">
                     {/* Шапка */}
                     <div className="header_container">
@@ -62,7 +65,7 @@ export function MainContent() {
                             <a href="https://tourstore.online/">Tourstore.online</a>
                         </h1> */}
                         <a href="https://tourstore.online/"><img src={logoHref} alt="Логотип" /></a>
-
+                        
                     </div>
                     {/* Блок с checkbox-сами */}
                     <div className="checkbox-container">
@@ -168,18 +171,21 @@ export function MainContent() {
                     <div className="footer-container">
                         <h3>Наши офисы</h3>
                         <span>Неудобно ехать в офис? Бронируйте онлайн!</span>
-                        <div className="slider-container"><ImageSlider items={[
+                        <div className="slider-container"><ImageSliderOffice items={[
                             {
                                 image: './images/SliderHouses/funsun.png',
                                 href: "https://tourstore.online/contacts/kasimov/FunSun/",
+                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/129242560997?type=rating",
                             },
                             {
                                 image: './images/SliderHouses/pegas.png',
                                 href: "https://tourstore.online/contacts/murom/pegas/",
+                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/155040791267?type=rating",
                             },
                             {
                                 image: './images/SliderHouses/anex.png',
                                 href: 'https://tourstore.online/contacts/murom/anex/',
+                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/173190705493?type=rating",
                             }
                         ]} />
                         </div>
