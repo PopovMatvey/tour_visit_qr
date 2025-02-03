@@ -9,7 +9,7 @@ export const CarouselItem = ({ item, width }: any) => {
     <div className="carousel-item" style={{ width: width }}>
       {/* <div className="carousel-item_block"> */}
         {/* <div className="carousel-item_image"> */}
-          <a className="carusel-href" href={item.href}>
+          <a className="carusel-href" href={item.href} target="_blank">
             <img className="carousel-img" src={hrefImage} alt="Изображение слайдера" />
           </a>
         {/* </div> */}

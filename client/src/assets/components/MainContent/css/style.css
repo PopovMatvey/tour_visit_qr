@@ -62,29 +62,38 @@ span {
     text-align: center;
 }
 
+.search_tours a{
+    color: #F18F34 !important;
+}
+
+.search_tours a:visited{
+    color: #F18F34 !important;
+}
+
 .header_container h1 {
     font-family: Monserat_Bold;
     text-transform: uppercase;
     font-size: 27px;
-    padding: 20px 0px;
 }
 
 .header_container h2 {
     text-transform: uppercase;
     font-size: 13px;
     color: #555042;
+    margin: 20px 0px;
 }
 
 @media screen and (min-width:490px) {
     .header_container h2 {
         font-size: 16px;
+        padding: 20px 0px 0px;
     }
 }
 
 .header_container img {
     width: 80%;
     max-width: 500px;
-    margin: 20px 0px;
+    margin: 0px 0px 20px;
 }
 
 .checkbox-container {

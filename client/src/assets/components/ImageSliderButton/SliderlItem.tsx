@@ -8,12 +8,12 @@ export const CarouselItem = ({ item, width }: any) => {
 
   return (
     <div className="carousel-item" style={{ width: width }}>
-      <a className="carusel-href" href={item.href}>
+      <a className="carusel-href" href={item.href} target="_blank">
         <img className="carousel-img" src={hrefImage} alt="Изображение слайдера" />
         <div className="button-slider">
-          <a href="https://tourstore.online/Tours/">
-          <img src="./images/icons/paper-plane-svgrepo-com.svg" alt="самолёт" />
-            <span>Написать сообщение</span>
+          <a href={item.href} target="_blank">
+            <img src="./images/icons/whtapp_icon.png" alt="самолёт" />
+            <span>Написать </span>
           </a>
         </div>
       </a>

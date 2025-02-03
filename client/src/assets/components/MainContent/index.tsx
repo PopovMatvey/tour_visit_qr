@@ -4,8 +4,10 @@ import YouTubeHref from "../../images/social/youtube.png";
 import InstHref from "../../images/social/instagram.png";
 import TgHref from "../../images/social/telegramm.png";
 import VkHref from "../../images/social/vk.png";
-import whatsappIcon from "../../images/icons/whatsapp_icon.png";
-import requestCall from "../../images/icons/call_icon.png";
+import whatsappIcon from "../../images/icons/icons_whatsapp.png";
+import requestCall from "../../images/icons/icons_helper.png";
+import vkIcon from "../../images/icons/icons_vk.png";
+import tgIcon from "../../images/icons/icons_telegram.png";
 import lupe from "../../images/icons/lupe.png";
 import phone from "../../images/icons/phone.png";
 import user from "../../images/icons/user.png";
@@ -56,16 +58,16 @@ export function MainContent() {
                     <source src="./videos/background.MP4" type="video/MP4" />
                 </video> */}
                 <img src="./images/background/beautifult_sky.jpg" alt="Фон" />
-                
+
                 <div className="content-container">
                     {/* Шапка */}
                     <div className="header_container">
-                        {/* <h2>Мультибрендовая сеть турагентств</h2>
-                        <h1>
+                        <h2>Цифровая визитка</h2>
+                        {/* <h1>
                             <a href="https://tourstore.online/">Tourstore.online</a>
                         </h1> */}
-                        <a href="https://tourstore.online/"><img src={logoHref} alt="Логотип" /></a>
-                        
+                        <a href="https://tourstore.online/" target="_blank"><img src={logoHref} alt="Логотип" /></a>
+
                     </div>
                     {/* Блок с checkbox-сами */}
                     <div className="checkbox-container">
@@ -102,26 +104,26 @@ export function MainContent() {
                     </div>
                     {/* Кнопки*/}
                     <div className="buttons-container flex">
-                        <a href="tel:+79308770633">
+                        <a href="tel:+79308770633" target="_blank">
                             {/* <a href="https://tourstore.online/Tours/"> */}
                             <img src={phone} alt="" />
                             <span>Позвонить</span>
                         </a>
                     </div>
                     <div className="green-buttons">
-                        <a href="https://wa.me/+79308770633">
+                        <a href="https://wa.me/+79308770633" target="_blank">
                             <img src={whatsappIcon} alt="Иконка WhatsApp" />
                             <span>Написать в WhasApp</span>
                         </a>
-                        <a href="https://t.me/+79308770633">
-                            {/* <img src={telegrampIcon} alt="Иконка Telegram" /> */}
+                        <a href="https://t.me/+79308770633" target="_blank">
+                            <img src={tgIcon} alt="Иконка Telegram" />
                             <span>Написать в Telegram</span>
                         </a>
-                        <a href="https://vk.com/im?media=&sel=-52963605">
-                            {/* <img src={telegrampIcon} alt="Иконка Telegram" /> */}
+                        <a href="https://vk.com/im?media=&sel=-52963605" target="_blank">
+                            <img src={vkIcon} alt="Иконка VK" />
                             <span>Написать в VK</span>
                         </a>
-                        <a href="#callbackwidget">
+                        <a href="#callbackwidget" target="_blank">
                             <img src={requestCall} alt="Иконка по запросу звонка" />
                             <span>Заказать обратный звонок</span>
                         </a>
@@ -130,6 +132,7 @@ export function MainContent() {
                         {/* tel:88002220633 */}
                         {/* <a href="./vcf/vcard.vcf"> */}
                         <a href="https://tourstore.online/contacts/TourStore.vcf"
+                            target="_blank"
                         // onClick={() => addContact('Иван Иванов', '+79991234567')}    
                         >
                             <img src={user} alt="Сохранить контакт" />
@@ -158,7 +161,7 @@ export function MainContent() {
                     </div>
                     {/* Кнопки*/}
                     <div className="buttons-container flex">
-                        <a href="https://tourstore.online/Tours/">
+                        <a href="https://tourstore.online/Tours/" target="_blank">
                             <img src={lupe} alt="" />
                             <span>Найти тур</span>
                         </a>
@@ -170,7 +173,6 @@ export function MainContent() {
                     {/* Подвал */}
                     <div className="footer-container">
                         <h3>Наши офисы</h3>
-                        <span>Неудобно ехать в офис? Бронируйте онлайн!</span>
                         <div className="slider-container"><ImageSliderOffice items={[
                             {
                                 image: './images/SliderHouses/funsun.png',
@@ -189,6 +191,9 @@ export function MainContent() {
                             }
                         ]} />
                         </div>
+                        <div className="search_tours">
+                            <span>Неудобно ехать в офис? <a href="https://tourstore.online/Tours/" target="_blank">Бронируйте онлайн!</a></span>
+                        </div>
                         <div className="dialog">
                             <img src="./images/icons/avatar.png" alt="" />
                             <div className="dialog-content">
@@ -198,7 +203,6 @@ export function MainContent() {
                             </div>
                         </div>
                         <h3>Наши специалисты</h3>
-                        {/* <span>У нас три оффлайн офиса, но мы паботаем со всей Россией</span> */}
                         <div className="slider-container">
                             <ImageSliderButton items={[
                                 {
