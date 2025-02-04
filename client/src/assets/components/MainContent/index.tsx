@@ -11,10 +11,11 @@ import tgIcon from "../../images/icons/icons_telegram.png";
 import lupe from "../../images/icons/lupe.png";
 import phone from "../../images/icons/phone.png";
 import user from "../../images/icons/user.png";
+import chackboxToggleBar from "../../images/icons/btns/checkbox-bar.png"
 import { ImageSlider } from "../ImageSlider";
 import { ImageSliderButton } from "../ImageSliderButton";
-import "./css/style.css";
 import { ImageSliderOffice } from "../ImageSliderOffice";
+import "./css/style.css";
 // import Slider from "../MobileSlider";
 // import SimpleSlider from "../MobileSlider";
 
@@ -60,6 +61,10 @@ export function MainContent() {
                 <img src="./images/background/beautifult_sky.jpg" alt="Фон" />
 
                 <div className="content-container">
+                    <div className="href_toggle-bar">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
                     {/* Шапка */}
                     <div className="header_container">
                         <h2>Цифровая визитка</h2>
@@ -76,7 +81,8 @@ export function MainContent() {
                                 <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
                                 <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg> */}
-                            <input type="checkbox" defaultChecked={checkboxValue} disabled />
+                            {/* <input type="checkbox" defaultChecked={checkboxValue} disabled /> */}
+                            <img src={chackboxToggleBar} alt="Тумблер" />
                             <li>Более 40 тысяч довольных туристов</li>
                             {/* <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
                             <label htmlFor="switch"></label> */}
@@ -86,7 +92,8 @@ export function MainContent() {
                                 <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
                                 <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg> */}
-                            <input type="checkbox" defaultChecked={checkboxValue} disabled />
+                            {/* <input type="checkbox" defaultChecked={checkboxValue} disabled /> */}
+                            <img src={chackboxToggleBar} alt="Тумблер" />
                             <li>Опыт в туризме более 12 лет</li>
                             {/* <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
                             <label htmlFor="switch"></label> */}
@@ -96,7 +103,8 @@ export function MainContent() {
                                 <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
                                 <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg> */}
-                            <input type="checkbox" defaultChecked={checkboxValue} disabled />
+                            {/* <input type="checkbox" defaultChecked={checkboxValue} disabled /> */}
+                            <img src={chackboxToggleBar} alt="Тумблер" />
                             <li>На связи 24/7</li>
                             {/* <input type="checkbox" id="switch" className="checkbox" defaultChecked={checkboxValue} />
                             <label htmlFor="switch"></label> */}
@@ -121,7 +129,7 @@ export function MainContent() {
                         </a>
                         <a href="https://vk.com/im?media=&sel=-52963605" target="_blank">
                             <img src={vkIcon} alt="Иконка VK" />
-                            <span>Написать в VK</span>
+                            <span>Написать во ВКонтакте</span>
                         </a>
                         <a href="#callbackwidget" target="_blank">
                             <img src={requestCall} alt="Иконка по запросу звонка" />
@@ -143,7 +151,7 @@ export function MainContent() {
                     {/* <div className="contacts-container_text">
                     </div> */}
                     <div className="contacts-container_block">
-                        <span>Всё самое выгодное и интересное  <br /> в наших сообществах</span>
+                        <span>Всё самое выгодное и интересное –  <br /> в наших сообществах:</span>
                         <div className="contacts-container">
                             <a href="https://vk.com/tourstore.online" target="_blank">
                                 <img src={VkHref} alt="Vk" />
@@ -166,43 +174,25 @@ export function MainContent() {
                             <span>Найти тур</span>
                         </a>
                     </div>
+                    <div className="dialog">
+                            <img src="./images/icons/avatar.png" alt="" />
+                            <div className="dialog-content">
+                                <span>
+                                    Привет! Меня зовут Ирина Гапич. Я основатель и руководитель мультибрендовой сети турагентств и сервиса по подбору туров TourStore.
+                                    <br /><br />
+                                    Обратившись к нам, вы сделали верный выбор. 
+                                    <br /><br />
+                                    Организация отдыха – хоть и приятная, но очень кропотливая работа: она не прощает даже мельчайших просчётов. Лучше доверить её тому, кто занимается ей ежедневно и знает все "подводные камни" и тонкости.
+                                </span>
+                            </div>
+                        </div>
                     {/* <div className="find-tours-container flex">
                         <a href="https://tourstore.online/Tours/">Найти тур</a>
                         <a href="https://tourstore.online/Tours/">Подписаться на рассылку</a>
                     </div> */}
                     {/* Подвал */}
                     <div className="footer-container">
-                        <h3>Наши офисы</h3>
-                        <div className="slider-container"><ImageSliderOffice items={[
-                            {
-                                image: './images/SliderHouses/funsun.png',
-                                href: "https://tourstore.online/contacts/kasimov/FunSun/",
-                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/129242560997?type=rating",
-                            },
-                            {
-                                image: './images/SliderHouses/pegas.png',
-                                href: "https://tourstore.online/contacts/murom/pegas/",
-                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/155040791267?type=rating",
-                            },
-                            {
-                                image: './images/SliderHouses/anex.png',
-                                href: 'https://tourstore.online/contacts/murom/anex/',
-                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/173190705493?type=rating",
-                            }
-                        ]} />
-                        </div>
-                        <div className="search_tours">
-                            <span>Неудобно ехать в офис? <a href="https://tourstore.online/Tours/" target="_blank">Бронируйте онлайн!</a></span>
-                        </div>
-                        <div className="dialog">
-                            <img src="./images/icons/avatar.png" alt="" />
-                            <div className="dialog-content">
-                                <span>
-                                    Привет! Меня зовут Ирина Гапич. Я основатель и руководитель мультибрендовой сети турагентств и сервиса по подбору туров TourStore. Обратившись к нам, вы сделали верный выбор. Организация отдыха – хоть и приятная, но очень кропотливая работа: она не прощает даже мельчайших просчётов. Лучше доверить её тому, кто занимается ей ежедневно и знает все "подводные камни" и тонкости.
-                                </span>
-                            </div>
-                        </div>
-                        <h3>Наши специалисты</h3>
+                    <h3>Наши специалисты</h3>
                         <div className="slider-container">
                             <ImageSliderButton items={[
                                 {
@@ -247,13 +237,37 @@ export function MainContent() {
                                 },
                             ]} />
                         </div>
+                        <h3>Наши офисы</h3>
+                        <div className="slider-container"><ImageSliderOffice items={[
+                            {
+                                image: './images/SliderHouses/funsun.png',
+                                href: "https://tourstore.online/contacts/kasimov/FunSun/",
+                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/129242560997?type=rating",
+                            },
+                            {
+                                image: './images/SliderHouses/pegas.png',
+                                href: "https://tourstore.online/contacts/murom/pegas/",
+                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/155040791267?type=rating",
+                            },
+                            {
+                                image: './images/SliderHouses/anex.png',
+                                href: 'https://tourstore.online/contacts/murom/anex/',
+                                hrefIframe: "https://yandex.ru/sprav/widget/rating-badge/173190705493?type=rating",
+                            }
+                        ]} />
+                        </div>
+                        <div className="search_tours">
+                            <span>Неудобно ехать в офис? <a href="https://tourstore.online/Tours/" target="_blank">Бронируйте онлайн!</a></span>
+                        </div>
+                        
+                        
                         {/* <SimpleSlider/> */}
                         <div className="attributes">
                             <span>
                                 ООО "Турсистемы" <br />
                                 ОГРН: 1136226000151 <br />
                                 Реестровый номер 0012871 <br />
-                                Едином федеральном реестре турагентов
+                                В едином федеральном реестре турагентов
                             </span>
                         </div>
                     </div>

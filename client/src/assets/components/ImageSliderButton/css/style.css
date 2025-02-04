@@ -36,7 +36,7 @@
 
 .carousel-img {
   min-width: 300px;
-  width: 70%;
+  width: 80%;
   max-height: 700px;
 }
 
@@ -110,8 +110,8 @@
 
 .button-slider {
   position: absolute;
-  bottom: 10%;
-  left: 27%;
+  bottom: 15%;
+  left: 30%;
   display: flex;
   /* gap: 10px; */
   padding: 0px 0px;
@@ -123,7 +123,18 @@
   .button-slider {
     /* position: absolute;
     bottom: 10%; */
-    left: 14%;
+    left: 25%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+}
+
+@media screen and (max-width:450px) {
+  .button-slider {
+    /* position: absolute;
+    bottom: 10%; */
+    left: 20%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -134,7 +145,7 @@
   .button-slider {
     /* position: absolute;
     bottom: 10%; */
-    left: 10%;
+    left: 17%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -142,7 +153,7 @@
 }
 
 .button-slider img {
-  width: 35px;
+  width: 30px;
 }
 
 .button-slider a {
@@ -150,11 +161,11 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  height: 45px;
+  height: 40px;
   background: #FFAF01;
-  border-radius: 50px;
+  border-radius: 15px;
   color: #FFF;
-  padding: 0px 70px;
+  padding: 0px 40px;
   /* background: linear-gradient(to right, #FFEF26, #FDC800, #F18F34, #E95F32, #CD3333); */
   transition: .5s all;
 }

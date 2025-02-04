@@ -110,51 +110,58 @@ span {
 
 .checkbox-container_item {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     border-radius: 5px;
-    /* padding: 15px 15px; */
-    padding: 10px !important;
+    /* padding: 5px 10px !important; */
     max-width: 991px;
-    gap: 5px;
+    gap: 0px;
     width: 100%;
     color: #FFF;
+    /* justify-content: space-between; */
+    /* padding: 15px 15px; */
 }
 
-.checkbox-container_item input[type="checkbox"] {
+.checkbox-container_item img{
+    width: 50px;
+    margin: 0 5px;
+    padding: 0;
+}
+
+/* .checkbox-container_item input[type="checkbox"] {
     width: 25px;
     height: 25px;
     appearance: none;
     -webkit-appearance: none;
-    /* background-color: #e0e0e0; */
-    /* border: 1px solid #ccc; */
     border-radius: 3px;
     cursor: pointer;
     position: relative;
-    color: #FFF;
-}
+    color: #FFF; */
+    /* background-color: #e0e0e0; */
+    /* border: 1px solid #ccc; */
+/* } */
 
-.checkbox-container_item input[type="checkbox"]:checked {
+/* .checkbox-container_item input[type="checkbox"]:checked { */
     /* background-color: #4CAF50; */
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF;
     background: none;
-    color: #FFF;
-}
+    color: #FFF; */
+/* } */
 
-.checkbox-container_item input[type="checkbox"]:checked::after {
+/* .checkbox-container_item input[type="checkbox"]:checked::after { */
     /* content: "✔"; */
-    content: url("../image/icons8-галочка.svg");
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 5px;
-    font-size: 15px;
-    height: 12px;
+    /* content: url("../../../images/icons/btns/checkbox-bar.png"); */
+    /* position: absolute; */
+    /* left: 0px;
+    top: 0px; */
+    /* height: 5px; */
+    /* font-size: 15px; */
+    /* height: 12px; */
+    /* width: 100%;
     color: #FFF;
     background: none;
-    border-width: 0 3px 3px 0;
+    border-width: 0 3px 3px 0; */
     /* transform: rotate(45deg); */
-}
+/* } */
 
 .checkbox-container_item li {
     /* position: relative; */
@@ -302,6 +309,7 @@ span {
 
 .footer-container h3 {
     margin: 20px;
+    font-size: 20px;
     /* font-family: Monserat_Bold; */
 }
 
@@ -353,7 +361,8 @@ span {
     padding: 10px 15px;
     margin: 0;
     text-align: left;
-    background: #dfdddd;
+    background: rgba(44, 218, 151,0.7);
+    color: #fff;
 }
 
 .dialog div span {
