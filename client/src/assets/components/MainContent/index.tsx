@@ -72,7 +72,7 @@ export function MainContent() {
                     </div>
                     {/* Шапка */}
                     <div className="header_container">
-                        <h2></h2><h2></h2>
+                        {/* <h2></h2><h2></h2> */}
                         {/* <h1>
                             <a href="https://tourstore.online/">Tourstore.online</a>
                         </h1> */}

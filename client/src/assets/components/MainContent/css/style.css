@@ -33,6 +33,7 @@ span {
     justify-content: center;
     /* width: 550px; */
     min-width: 450px;
+    height: 100px;
     /* max-width: 450px; */
     /* border: 1px solid black; */
 }
@@ -63,6 +64,7 @@ span {
 
 #href_toggle-bar-first {
     position: absolute;
+    top: -5%;
     left: 9%;
     background-color: orange;
     border-radius: 10px;
@@ -76,14 +78,41 @@ span {
 
 #href_toggle-bar-second {
     position: absolute;
+    top: -5%;
     right: 9%;
-    background-color: rgb(44, 218, 151);
+    background-color: #2cda97;
     z-index: 1;
 }
 
 #href_toggle-bar-second:hover {
     background-color: #FFF;
     color: #000;
+}
+
+
+@media screen and (max-width:500px) {
+    .href_toggle-bar {
+        min-width: 300px;
+        height: 70px;
+    }
+
+    .href_toggle-bar a {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    #href_toggle-bar-first {
+        position: absolute;
+        top: -5%;
+        left: 7%;
+    }
+
+
+    #href_toggle-bar-second {
+        position: absolute;
+        top: -5%;
+        right: 7%;
+    }
 }
 
 /* .common-container video {
@@ -341,6 +370,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 100px;
     max-width: 150px;
     background: #ffffff80;
     padding: 15px 0px;
@@ -499,7 +529,7 @@ span {
     max-width: 20px;
 }
 
-.alarm-container{
+.alarm-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -507,15 +537,15 @@ span {
 }
 
 /* .alarm-container div{ */
-    /* border:1px solid  #000; */
+/* border:1px solid  #000; */
 /* } */
 
-.alarm-container_reviews{
+.alarm-container_reviews {
     position: absolute;
     right: 0;
 }
 
-.alarm-container_block{
+.alarm-container_block {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -526,18 +556,19 @@ span {
     padding: 20px 0px;
 }
 
-.alarm-container_block img{
+.alarm-container_block img {
     width: 100%;
 
 }
 
-.alarm-container_block a{
+.alarm-container_block a {
     position: absolute;
     bottom: 5px;
-    color: #2375CE;
+    color: #529ed7;
+    font-weight: bold;
     /* left: 25%; */
 }
 
-.alarm-container_block a:visited{
-    color: #2375CE;
+.alarm-container_block a:visited {
+    color: #529ed7;
 }
