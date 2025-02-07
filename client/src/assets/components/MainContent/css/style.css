@@ -1,5 +1,4 @@
 /* Стили основного контента */
-
 .common-container {
     display: flex;
     justify-content: center;
@@ -26,6 +25,65 @@ span {
     width: 100%;
     height: 100%;
     z-index: 0;
+}
+
+.href_toggle-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* width: 550px; */
+    min-width: 450px;
+    /* max-width: 450px; */
+    /* border: 1px solid black; */
+}
+
+.href_toggle-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+    clip-path: polygon(0% 0, 100% 0, 83% 100%, 14% 100%);
+    /* border-radius: 10px; */
+    text-align: center;
+    /* border-bottom-left-radius: 20%; */
+    color: #FFF;
+    transition: .5s all;
+}
+
+.href_toggle-bar a:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.href_toggle-bar a:visited {
+    color: #FFF;
+}
+
+
+#href_toggle-bar-first {
+    position: absolute;
+    left: 9%;
+    background-color: orange;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#href_toggle-bar-first:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+#href_toggle-bar-second {
+    position: absolute;
+    right: 9%;
+    background-color: rgb(44, 218, 151);
+    z-index: 1;
+}
+
+#href_toggle-bar-second:hover {
+    background-color: #FFF;
+    color: #000;
 }
 
 /* .common-container video {
@@ -62,11 +120,11 @@ span {
     text-align: center;
 }
 
-.search_tours a{
+.search_tours a {
     color: #F18F34 !important;
 }
 
-.search_tours a:visited{
+.search_tours a:visited {
     color: #F18F34 !important;
 }
 
@@ -121,7 +179,7 @@ span {
     /* padding: 15px 15px; */
 }
 
-.checkbox-container_item img{
+.checkbox-container_item img {
     width: 50px;
     margin: 0 5px;
     padding: 0;
@@ -136,31 +194,31 @@ span {
     cursor: pointer;
     position: relative;
     color: #FFF; */
-    /* background-color: #e0e0e0; */
-    /* border: 1px solid #ccc; */
+/* background-color: #e0e0e0; */
+/* border: 1px solid #ccc; */
 /* } */
 
 /* .checkbox-container_item input[type="checkbox"]:checked { */
-    /* background-color: #4CAF50; */
-    /* border: 1px solid #FFF;
+/* background-color: #4CAF50; */
+/* border: 1px solid #FFF;
     background: none;
     color: #FFF; */
 /* } */
 
 /* .checkbox-container_item input[type="checkbox"]:checked::after { */
-    /* content: "✔"; */
-    /* content: url("../../../images/icons/btns/checkbox-bar.png"); */
-    /* position: absolute; */
-    /* left: 0px;
+/* content: "✔"; */
+/* content: url("../../../images/icons/btns/checkbox-bar.png"); */
+/* position: absolute; */
+/* left: 0px;
     top: 0px; */
-    /* height: 5px; */
-    /* font-size: 15px; */
-    /* height: 12px; */
-    /* width: 100%;
+/* height: 5px; */
+/* font-size: 15px; */
+/* height: 12px; */
+/* width: 100%;
     color: #FFF;
     background: none;
     border-width: 0 3px 3px 0; */
-    /* transform: rotate(45deg); */
+/* transform: rotate(45deg); */
 /* } */
 
 .checkbox-container_item li {
@@ -361,7 +419,7 @@ span {
     padding: 10px 15px;
     margin: 0;
     text-align: left;
-    background: rgba(44, 218, 151,0.7);
+    background: rgba(44, 218, 151, 0.7);
     color: #fff;
 }
 
@@ -375,6 +433,7 @@ span {
 .attributes span {
     /* text-align: left; */
     text-transform: none;
+    margin: 30px 0px;
 }
 
 /* Кнопки */
@@ -438,4 +497,47 @@ span {
 
 .buttons-container img {
     max-width: 20px;
+}
+
+.alarm-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid  #000; */
+}
+
+/* .alarm-container div{ */
+    /* border:1px solid  #000; */
+/* } */
+
+.alarm-container_reviews{
+    position: absolute;
+    right: 0;
+}
+
+.alarm-container_block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:1px solid  #000; */
+    width: 300px;
+    height: 150px;
+    padding: 20px 0px;
+}
+
+.alarm-container_block img{
+    width: 100%;
+
+}
+
+.alarm-container_block a{
+    position: absolute;
+    bottom: 5px;
+    color: #2375CE;
+    /* left: 25%; */
+}
+
+.alarm-container_block a:visited{
+    color: #2375CE;
 }

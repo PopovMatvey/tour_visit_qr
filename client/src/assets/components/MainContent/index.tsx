@@ -12,6 +12,7 @@ import lupe from "../../images/icons/lupe.png";
 import phone from "../../images/icons/phone.png";
 import user from "../../images/icons/user.png";
 import chackboxToggleBar from "../../images/icons/btns/checkbox-bar.png"
+import notification from "./image/notification.png";
 import { ImageSlider } from "../ImageSlider";
 import { ImageSliderButton } from "../ImageSliderButton";
 import { ImageSliderOffice } from "../ImageSliderOffice";
@@ -62,12 +63,16 @@ export function MainContent() {
 
                 <div className="content-container">
                     <div className="href_toggle-bar">
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="#" id="href_toggle-bar-first">
+                            Цифровая визитка
+                        </a>
+                        <a href="https://tourstore.online/" id="href_toggle-bar-second">
+                            Основной сайт
+                        </a>
                     </div>
                     {/* Шапка */}
                     <div className="header_container">
-                        <h2>Цифровая визитка</h2>
+                        <h2></h2><h2></h2>
                         {/* <h1>
                             <a href="https://tourstore.online/">Tourstore.online</a>
                         </h1> */}
@@ -121,15 +126,15 @@ export function MainContent() {
                     <div className="green-buttons">
                         <a href="https://wa.me/+79308770633" target="_blank">
                             <img src={whatsappIcon} alt="Иконка WhatsApp" />
-                            <span>Написать в WhasApp</span>
+                            <span>Написать <br /> в WhasApp</span>
                         </a>
                         <a href="https://t.me/+79308770633" target="_blank">
                             <img src={tgIcon} alt="Иконка Telegram" />
-                            <span>Написать в Telegram</span>
+                            <span>Написать <br /> в Telegram</span>
                         </a>
                         <a href="https://vk.com/im?media=&sel=-52963605" target="_blank">
                             <img src={vkIcon} alt="Иконка VK" />
-                            <span>Написать во ВКонтакте</span>
+                            <span>Написать <br /> в Vk</span>
                         </a>
                         {/* <a href="#callbackwidget" target="_blank">
                             <img src={requestCall} alt="Иконка по запросу звонка" />
@@ -175,64 +180,72 @@ export function MainContent() {
                         </a>
                     </div>
                     <div className="dialog">
-                            <img src="./images/icons/avatar.png" alt="" />
-                            <div className="dialog-content">
-                                <span>
-                                    Привет! Меня зовут Ирина Гапич. Я основатель и руководитель мультибрендовой сети турагентств и сервиса по подбору туров TourStore.
-                                    <br /><br />
-                                    Обратившись к нам, вы сделали верный выбор. 
-                                    <br /><br />
-                                    Организация отдыха – хоть и приятная, но очень кропотливая работа: она не прощает даже мельчайших просчётов. Лучше доверить её тому, кто занимается ей ежедневно и знает все "подводные камни" и тонкости.
-                                </span>
-                            </div>
+                        <img src="./images/icons/avatar.png" alt="" />
+                        <div className="dialog-content">
+                            <span>
+                                Привет! Меня зовут Ирина Гапич. Я основатель и руководитель мультибрендовой сети турагентств и сервиса по подбору туров TourStore.
+                                <br /><br />
+                                Обратившись к нам, вы сделали верный выбор.
+                                <br /><br />
+                                Организация отдыха – хоть и приятная, но очень кропотливая работа: она не прощает даже мельчайших просчётов. Лучше доверить её тому, кто занимается ей ежедневно и знает все "подводные камни" и тонкости.
+                            </span>
                         </div>
+                    </div>
                     {/* <div className="find-tours-container flex">
                         <a href="https://tourstore.online/Tours/">Найти тур</a>
                         <a href="https://tourstore.online/Tours/">Подписаться на рассылку</a>
                     </div> */}
                     {/* Подвал */}
                     <div className="footer-container">
-                    <h3>Наши специалисты</h3>
+                        <h3>Наши специалисты</h3>
                         <div className="slider-container">
                             <ImageSliderButton items={[
                                 {
                                     image: './images/staff/Matushkina.png',
                                     href: "https://wa.me/+79009666545",
+                                    hrefCompany: "https://tourstore.online/company/staff/anastasiya-matyushkina/",
                                     name: "Матюшкина",
                                 },
                                 {
                                     image: './images/staff/Romanova.png',
                                     href: "https://wa.me/+79157901990",
+                                    hrefCompany: "https://tourstore.online/company/staff/yana-romanova/",
                                     name: "Романова",
                                 },
                                 {
                                     image: './images/staff/Hlebnikova.png',
                                     href: "https://wa.me/+79028889828",
+                                    hrefCompany: "https://tourstore.online/company/staff/ekaterina-khlebnikova/",
                                     name: "Хлебникова",
                                 },
                                 {
                                     image: './images/staff/Kornushova.png',
                                     href: "https://wa.me/+79107717892",
+                                    hrefCompany: "https://tourstore.online/company/staff/elizaveta-kornishova/",
                                     name: "Корнишова",
                                 },
                                 {
                                     image: './images/staff/Timofeeva.png',
                                     href: "https://wa.me/+79028889818",
+                                    hrefCompany: "https://tourstore.online/company/staff/elena-timofeeva/",
                                     name: "Тимофеева",
-                                }, ,
+                                },
                                 {
                                     image: './images/staff/Koshkina.png',
                                     href: "https://wa.me/+79511027000",
+                                    hrefCompany: "https://tourstore.online/company/staff/elena-koshkina/",
                                     name: "Кошкина",
                                 },
                                 {
                                     image: './images/staff/Tovmasyan.png',
                                     href: "https://wa.me/+79107717890",
+                                    hrefCompany: "https://tourstore.online/company/staff/maryam-tovmasyan/",
                                     name: "Товмасян",
                                 },
                                 {
                                     image: './images/staff/Plukiene.png',
                                     href: "https://wa.me/+79009666505",
+                                    hrefCompany: "https://tourstore.online/company/staff/plukiene-lyudmila/",
                                     name: "Плукиене",
                                 },
                             ]} />
@@ -256,18 +269,25 @@ export function MainContent() {
                             }
                         ]} />
                         </div>
-                        <div className="search_tours">
+                        {/* <div className="search_tours">
                             <span>Неудобно ехать в офис? <a href="https://tourstore.online/Tours/" target="_blank">Бронируйте онлайн!</a></span>
+                        </div> */}
+                        <div className="alarm-container">
+                            <div className="alarm-container_block">
+                                <img src={notification} alt="Уведомление" />
+                                <a href="https://tourstore.online/Tours/">Бронируйте онлайн</a>
+                            </div>
+                            {/* <div className="alarm-container_reviews">
+                                <span>Читать отзывы</span>
+                            </div> */}
                         </div>
-                        
-                        
                         {/* <SimpleSlider/> */}
                         <div className="attributes">
                             <span>
                                 ООО "Турсистемы" <br />
                                 ОГРН: 1136226000151 <br />
                                 Реестровый номер 0012871 <br />
-                                В едином федеральном реестре турагентов
+                                в едином федеральном реестре турагентов
                             </span>
                         </div>
                     </div>
