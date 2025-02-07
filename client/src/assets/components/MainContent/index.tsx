@@ -131,10 +131,10 @@ export function MainContent() {
                             <img src={vkIcon} alt="Иконка VK" />
                             <span>Написать во ВКонтакте</span>
                         </a>
-                        <a href="#callbackwidget" target="_blank">
+                        {/* <a href="#callbackwidget" target="_blank">
                             <img src={requestCall} alt="Иконка по запросу звонка" />
                             <span>Заказать обратный звонок</span>
-                        </a>
+                        </a> */}
                     </div>
                     <div className="buttons-container flex">
                         {/* tel:88002220633 */}
