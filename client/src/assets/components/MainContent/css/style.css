@@ -28,15 +28,21 @@ span {
 }
 
 .href_toggle-bar {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     /* width: 550px; */
     min-width: 450px;
     height: 100px;
     /* max-width: 450px; */
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
+
+.href_toggle-bar svg{
+   /* transform: scale(0.8); */
+}
+
 
 .href_toggle-bar a {
     display: flex;
@@ -62,32 +68,32 @@ span {
 }
 
 
-#href_toggle-bar-first {
+/* #href_toggle-bar-first {
     position: absolute;
     top: -5%;
     left: 9%;
     background-color: orange;
     border-radius: 10px;
     z-index: 2;
-}
+} */
 
-#href_toggle-bar-first:hover {
+/* #href_toggle-bar-first:hover {
     background-color: #FFF;
     color: #000;
-}
+} */
 
-#href_toggle-bar-second {
+/* #href_toggle-bar-second {
     position: absolute;
     top: -5%;
     right: 9%;
     background-color: #2cda97;
     z-index: 1;
-}
+} */
 
-#href_toggle-bar-second:hover {
+/* #href_toggle-bar-second:hover {
     background-color: #FFF;
     color: #000;
-}
+} */
 
 
 @media screen and (max-width:500px) {

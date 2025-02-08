@@ -16,6 +16,8 @@ import notification from "./image/notification.png";
 import { ImageSlider } from "../ImageSlider";
 import { ImageSliderButton } from "../ImageSliderButton";
 import { ImageSliderOffice } from "../ImageSliderOffice";
+import toggle from "./image/toggle_clear.svg"
+import { toggleClearSVG } from "../../data/toggleButtonSVG";
 import "./css/style.css";
 // import Slider from "../MobileSlider";
 // import SimpleSlider from "../MobileSlider";
@@ -52,6 +54,9 @@ export function MainContent() {
     //     });
     //  }
 
+    const handlerToggleClearSVG = () => {
+
+    }
 
     return (
         <>
@@ -63,13 +68,18 @@ export function MainContent() {
 
                 <div className="content-container">
                     <div className="href_toggle-bar">
-                        <a href="#" id="href_toggle-bar-first">
+                        {/* <a href="#" id="href_toggle-bar-first">
                             Цифровая визитка
                         </a>
                         <a href="https://tourstore.online/" id="href_toggle-bar-second">
                             Основной сайт
-                        </a>
+                        </a> */}
+                        {/* <img src={toggle} alt="" /> */}
+                        <div className="href_toggle-bar_svg" dangerouslySetInnerHTML={{ __html: toggleClearSVG }} onClick={handlerToggleClearSVG}></div>
+
                     </div>
+
+
                     {/* Шапка */}
                     <div className="header_container">
                         {/* <h2></h2><h2></h2> */}
