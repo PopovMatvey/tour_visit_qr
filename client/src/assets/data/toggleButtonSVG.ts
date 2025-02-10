@@ -1,6 +1,6 @@
 export const toggleClearSVG = `
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="90.7642 112.75 384.354 60.0106" width="540.354px" height="60.0106px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="90.7642 112.75 334.354 60.0106" width="550.354px" height="60.0106px">
 <defs>
 <style type="text/css">
     .cls-1 {
