@@ -76,13 +76,27 @@ export function MainContent() {
                         </a> */}
                         {/* <img src={toggle} alt="" /> */}
                         <div className="href_toggle-bar_svg" dangerouslySetInnerHTML={{ __html: toggleClearSVG }} onClick={handlerToggleClearSVG}></div>
-                        <div className="href_toggle-bar_text">
+                        {/* <div className="href_toggle-bar_text">
                             <a href="https://tourstore.online/" id="href_toggle-bar-first">Основной сайт</a>
                             <a href="#"id="href_toggle-bar-second" >Цифровая визитка</a>
-                        </div>
+                        </div> */}
+                        <a href="/"><span id="href_toggle-bar-first">Основной сайт</span></a>
+                        <a href="https://tourstore.online/"><span id="href_toggle-bar-second">Цифровая визитка</span></a>
                     </div>
-
-
+                    {/* <div className="main-1">
+                        <div className="block2"><h1>нет</h1></div>
+                        <div className="block1 b2">Проведите надо мной</div>
+                        <div className="block2"><h1>да</h1></div>
+                        <div className="block2"><h1>да</h1></div>
+                        <div>
+                            <div className="block2"><h1>нет</h1></div>
+                        </div>
+                        <div className="block2">
+                            <p>
+                                <h1>да</h1>
+                            </p>
+                        </div>
+                    </div> */}
                     {/* Шапка */}
                     <div className="header_container">
                         {/* <h2></h2><h2></h2> */}

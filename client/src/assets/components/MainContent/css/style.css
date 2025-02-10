@@ -1,4 +1,5 @@
 /* Стили основного контента */
+
 .common-container {
     display: flex;
     justify-content: center;
@@ -34,17 +35,29 @@ span {
     flex-direction: column;
     align-items: center;
     /* width: 550px; */
-    min-width: 450px;
+    min-width: 400px;
     height: 100px;
     /* max-width: 450px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-.href_toggle-bar svg{
+.href_toggle-bar span{
+    /* border: 1px solid black; */
+    height: 50px;
+    font-size: 14px;
+    /* width: 170px; */
+}
+
+/* @media screen and (max-width:660px) {
+    .href_toggle-bar {
+        font-size: 12px;
+    }
+} */
+
+.href_toggle-bar svg {
     z-index: 2;
-   /* transform: scale(0.8); */
+    /* transform: scale(0.8); */
 }
-
 
 .href_toggle-bar a {
     display: flex;
@@ -61,26 +74,25 @@ span {
     transition: .5s all;
 }
 
-
 .href_toggle-bar a:hover {
-    background-color: #000;
+    /* background-color: #000; */
     /* color: #000; */
     transform: none;
 }
 
 .href_toggle-bar a:visited {
     color: #FFF;
-} 
+}
 
 .href_toggle-bar_text a {
     width: 43%;
     height: 100%;
     clip-path: none;
     z-index: 1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-.href_toggle-bar_text{
+.href_toggle-bar_text {
     position: absolute;
     /* top: 25px; */
     display: flex;
@@ -93,18 +105,19 @@ span {
     background: none;
 }
 
-.href_toggle-bar_text a{
+.href_toggle-bar_text a {
     height: 70px;
     width: 250px;
     clip-path: polygon(0 0, 100% 0, 83% 100%, 14% 100%);
 }
 
-
 #href_toggle-bar-first {
     position: absolute;
-    top: -5%;
-    left: 9%;
-    background-color: orange;
+    top: 10%;
+    left: 25%;
+    color: #FFF;
+    /* font-size: 3vw; */
+    /* background-color: orange; */
     /* border-radius: 10px; */
     z-index: 2;
 }
@@ -116,11 +129,64 @@ span {
 
 #href_toggle-bar-second {
     position: absolute;
-    top: -5%;
-    right: 9%;
-    
-    background-color: #2cda97;
+    top: 10%;
+    right: 22%;
+    /* font-size: 3vw; */
+    color: #FFF;
     z-index: 1;
+}
+
+#href_toggle-bar-second:hover{
+    cursor: pointer;
+}
+
+.href_toggle-bar #href_toggle-bar-second:hover ~ .href_toggle-bar path{
+    fill: #000;
+}
+/* .href_toggle-bar path{
+    fill:#000;
+} */
+
+@media screen and (max-width:650px) {
+    #href_toggle-bar-first {
+        /* top: 15%;
+        left: 10%;  */
+        font-size: 12px;
+    }
+
+    #href_toggle-bar-second {
+        /* top: 15%;
+        right: 11%;  */
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #href_toggle-bar-first {
+        /* top: 15%;*/
+        left: 12%;  
+        font-size: 12px;
+    }
+
+    #href_toggle-bar-second {
+        /* top: 15%;*/
+        right: 11%;  
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:420px) {
+     #href_toggle-bar-first {
+        /* top: 10px;*/
+        left: 10px; 
+        font-size: 14px;
+    }
+
+    #href_toggle-bar-second {
+        /* top: 10px;*/
+        right: 0px; 
+        font-size: 14px;
+    }
 }
 
 /* #href_toggle-bar-second:hover {
@@ -128,30 +194,25 @@ span {
     color: #000;
 } */
 
-
 @media screen and (max-width:500px) {
     .href_toggle-bar {
         min-width: 300px;
         height: 70px;
     }
-
     .href_toggle-bar a {
         height: 50px;
         font-size: 12px;
     }
-
-    #href_toggle-bar-first {
+    /* #href_toggle-bar-first {
         position: absolute;
         top: -5%;
         left: 7%;
-    }
-
-
-    #href_toggle-bar-second {
+    } */
+    /* #href_toggle-bar-second {
         position: absolute;
         top: -5%;
         right: 7%;
-    }
+    } */
 }
 
 /* .common-container video {
@@ -167,7 +228,6 @@ span {
         width: auto;
         height: 150vh;
     } */
-
     .common-container>img {
         width: auto;
         /* width: 100%; */
@@ -262,31 +322,47 @@ span {
     cursor: pointer;
     position: relative;
     color: #FFF; */
+
 /* background-color: #e0e0e0; */
+
 /* border: 1px solid #ccc; */
+
 /* } */
 
 /* .checkbox-container_item input[type="checkbox"]:checked { */
+
 /* background-color: #4CAF50; */
+
 /* border: 1px solid #FFF;
     background: none;
     color: #FFF; */
+
 /* } */
 
 /* .checkbox-container_item input[type="checkbox"]:checked::after { */
+
 /* content: "✔"; */
+
 /* content: url("../../../images/icons/btns/checkbox-bar.png"); */
+
 /* position: absolute; */
+
 /* left: 0px;
     top: 0px; */
+
 /* height: 5px; */
+
 /* font-size: 15px; */
+
 /* height: 12px; */
+
 /* width: 100%;
     color: #FFF;
     background: none;
     border-width: 0 3px 3px 0; */
+
 /* transform: rotate(45deg); */
+
 /* } */
 
 .checkbox-container_item li {
@@ -299,7 +375,6 @@ span {
     .checkbox-container_item {
         font-size: 12px;
     }
-
     .checkbox-container_item li {
         padding: 0px 5px;
     }
@@ -315,7 +390,6 @@ span {
 } */
 
 @keyframes appearance {
-
     /* 0% {
         height: 0;
         opacity: 0;
@@ -330,19 +404,16 @@ span {
         width: 0;
         opacity: 1;
     }
-
     20% {
         height: 0;
         width: 1.75em;
         opacity: 1;
     }
-
     40% {
         height: 3.5em;
         width: 1.75em;
         opacity: 1;
     }
-
     100% {
         height: 3.5em;
         width: 1.75em;
@@ -576,7 +647,9 @@ span {
 }
 
 /* .alarm-container div{ */
+
 /* border:1px solid  #000; */
+
 /* } */
 
 .alarm-container_reviews {
@@ -597,7 +670,6 @@ span {
 
 .alarm-container_block img {
     width: 100%;
-
 }
 
 .alarm-container_block a {

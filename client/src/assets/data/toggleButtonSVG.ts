@@ -1,6 +1,6 @@
 export const toggleClearSVG = `
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="90.7642 112.75 384.354 60.0106" width="484.354px" height="70.0106px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="90.7642 112.75 384.354 60.0106" width="454.354px" height="60.0106px">
 <defs>
 <style type="text/css">
     .cls-1 {
@@ -20,15 +20,12 @@ export const toggleClearSVG = `
         stroke-miterlimit: 10;
         transition: .5s all;
     }
-
-    path:hover{
-        cursor:pointer;
-        fill:#000;
-    }
         
-    .href_toggle-bar a:hover path{
-        fill:#000;
-    }
+    path:hover{
+      cursor:pointer;
+     }
+
+    #href_toggle-bar-second:hover ~ path { fill: #000;}
 </style>
 </defs>
   <g transform="matrix(1.1011120080947876, 0, 0, 1.1011120080947876, 91.31476593017578, 113.30055236816408)" style="">
@@ -41,6 +38,15 @@ export const toggleClearSVG = `
 </svg>
 `;
 
+
+// path:hover{
+//   cursor:pointer;
+//   fill:#000;
+// }
+  
+// .href_toggle-bar a:hover path{
+//   fill:#000;
+// }
 // path {
 //     transition: .5s all;
 // }
