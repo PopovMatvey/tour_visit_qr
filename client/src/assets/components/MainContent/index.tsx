@@ -76,7 +76,10 @@ export function MainContent() {
                         </a> */}
                         {/* <img src={toggle} alt="" /> */}
                         <div className="href_toggle-bar_svg" dangerouslySetInnerHTML={{ __html: toggleClearSVG }} onClick={handlerToggleClearSVG}></div>
-
+                        <div className="href_toggle-bar_text">
+                            <a href="https://tourstore.online/" id="href_toggle-bar-first">Основной сайт</a>
+                            <a href="#"id="href_toggle-bar-second" >Цифровая визитка</a>
+                        </div>
                     </div>
 
 
