@@ -80,8 +80,8 @@ export function MainContent() {
                             <a href="https://tourstore.online/" id="href_toggle-bar-first">Основной сайт</a>
                             <a href="#"id="href_toggle-bar-second" >Цифровая визитка</a>
                         </div> */}
-                        <a href="/"><span id="href_toggle-bar-first">Основной сайт</span></a>
-                        <a href="https://tourstore.online/"><span id="href_toggle-bar-second">Цифровая визитка</span></a>
+                        <a href="/"><span id="href_toggle-bar-first">Цифровая визитка</span></a>
+                        <a href="https://tourstore.online/"><span id="href_toggle-bar-second">Основной сайт</span></a>
                     </div>
                     {/* <div className="main-1">
                         <div className="block2"><h1>нет</h1></div>

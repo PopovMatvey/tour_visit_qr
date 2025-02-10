@@ -35,8 +35,8 @@ span {
     flex-direction: column;
     align-items: center;
     /* width: 550px; */
-    min-width: 400px;
-    height: 100px;
+    /* min-width: 400px; */
+    height: 70px;
     /* max-width: 450px; */
     /* border: 1px solid black; */
 }
@@ -55,6 +55,9 @@ span {
 } */
 
 .href_toggle-bar svg {
+    position: absolute;
+    left: 5%;
+    width: 100%;
     z-index: 2;
     /* transform: scale(0.8); */
 }
@@ -63,7 +66,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    /* width: 50%; */
     /* height: 70px; */
     /* clip-path: polygon(0% 0, 100% 0, 83% 100%, 14% 100%); */
     /* clip-path: polygon(0% 30%, 100% 10%, 80% 100%, 8% 100%); */
@@ -88,7 +91,7 @@ span {
     width: 43%;
     height: 100%;
     clip-path: none;
-    z-index: 1;
+    /* z-index: 1; */
     /* border: 1px solid black; */
 }
 
@@ -130,10 +133,10 @@ span {
 #href_toggle-bar-second {
     position: absolute;
     top: 10%;
-    right: 22%;
+    right: 27%;
     /* font-size: 3vw; */
     color: #FFF;
-    z-index: 1;
+    z-index: 2;
 }
 
 #href_toggle-bar-second:hover{
@@ -161,31 +164,45 @@ span {
     }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:600px) {
     #href_toggle-bar-first {
-        /* top: 15%;*/
-        left: 12%;  
+        /* /* top: 15%; */
+        left: 18%;  
         font-size: 12px;
     }
 
     #href_toggle-bar-second {
-        /* top: 15%;*/
-        right: 11%;  
+        /* /* top: 15%; */
+        right: 22%;  
         font-size: 12px;
     }
 }
+/* 
+@media screen and (max-width:560px) {
+    #href_toggle-bar-first {
+        top: 15%;
+        left: 15%;  
+        font-size: 12px;
+    }
 
-@media screen and (max-width:420px) {
+    #href_toggle-bar-second {
+        /* top: 15%;
+        right: 25%;  
+        font-size: 12px;
+    }
+} */
+
+@media screen and (max-width:440px) {
      #href_toggle-bar-first {
         /* top: 10px;*/
-        left: 10px; 
-        font-size: 14px;
+        /* left: 10px;  */
+        left: 10%;  
     }
 
     #href_toggle-bar-second {
         /* top: 10px;*/
-        right: 0px; 
-        font-size: 14px;
+        /* right: 0px;  */
+        right: 18%;  
     }
 }
 
