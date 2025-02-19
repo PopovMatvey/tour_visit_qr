@@ -4,7 +4,11 @@
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 0% 1%;
+    /* padding: 0% 1%; */
+}
+
+.content-container>div {
+    margin-bottom: 30px;
 }
 
 span {
@@ -41,7 +45,7 @@ span {
     /* border: 1px solid black; */
 }
 
-.href_toggle-bar span{
+.href_toggle-bar span {
     /* border: 1px solid black; */
     height: 50px;
     font-size: 14px;
@@ -134,19 +138,20 @@ span {
 #href_toggle-bar-second {
     position: absolute;
     top: 12%;
-    right: 28%;
+    right: 23%;
     /* font-size: 3vw; */
     color: #FFF;
     z-index: 2;
 }
 
-#href_toggle-bar-second:hover{
+#href_toggle-bar-second:hover {
     cursor: pointer;
 }
 
-.href_toggle-bar #href_toggle-bar-second:hover ~ .href_toggle-bar path{
+.href_toggle-bar #href_toggle-bar-second:hover~.href_toggle-bar path {
     fill: #000;
 }
+
 /* .href_toggle-bar path{
     fill:#000;
 } */
@@ -168,16 +173,17 @@ span {
 @media screen and (max-width:600px) {
     #href_toggle-bar-first {
         /* /* top: 15%; */
-        left: 18%;  
+        left: 18%;
         font-size: 12px;
     }
 
     #href_toggle-bar-second {
         /* /* top: 15%; */
-        right: 22%;  
+        right: 16%;
         font-size: 12px;
     }
 }
+
 /* 
 @media screen and (max-width:560px) {
     #href_toggle-bar-first {
@@ -194,16 +200,16 @@ span {
 } */
 
 @media screen and (max-width:440px) {
-     #href_toggle-bar-first {
+    #href_toggle-bar-first {
         /* top: 10px;*/
         /* left: 10px;  */
-        left: 10%;  
+        left: 10%;
     }
 
     #href_toggle-bar-second {
         /* top: 10px;*/
         /* right: 0px;  */
-        right: 17%;  
+        right: 8%;
     }
 }
 
@@ -217,10 +223,12 @@ span {
         min-width: 300px;
         height: 70px;
     }
+
     .href_toggle-bar a {
         height: 50px;
         font-size: 12px;
     }
+
     /* #href_toggle-bar-first {
         position: absolute;
         top: -5%;
@@ -242,6 +250,7 @@ span {
 } */
 
 @media screen and (max-width:715px) {
+
     /* .common-container video {
         width: auto;
         height: 150vh;
@@ -393,6 +402,7 @@ span {
     .checkbox-container_item {
         font-size: 12px;
     }
+
     .checkbox-container_item li {
         padding: 0px 5px;
     }
@@ -408,6 +418,7 @@ span {
 } */
 
 @keyframes appearance {
+
     /* 0% {
         height: 0;
         opacity: 0;
@@ -422,16 +433,19 @@ span {
         width: 0;
         opacity: 1;
     }
+
     20% {
         height: 0;
         width: 1.75em;
         opacity: 1;
     }
+
     40% {
         height: 3.5em;
         width: 1.75em;
         opacity: 1;
     }
+
     100% {
         height: 3.5em;
         width: 1.75em;
@@ -523,6 +537,10 @@ span {
     line-height: 20px;
 }
 
+.footer-container>div {
+    margin-bottom: 40px;
+}
+
 .footer-container h3 {
     margin: 20px;
     font-size: 20px;
@@ -588,10 +606,11 @@ span {
     text-align: left;
 }
 
+
 .attributes span {
     /* text-align: left; */
     text-transform: none;
-    margin: 30px 0px;
+    margin: 50px 0px;
 }
 
 /* Кнопки */
