@@ -1,0 +1,27 @@
+
+.slider {
+    width: 90vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0;
+    /* border: 1px solid blue; */
+}
+
+.slider_item {
+    min-width: 90vw;
+    /* border: 1px solid black; */
+    scroll-snap-type: start;
+    /* margin: 0px 5px; */
+    padding: 10px;
+}
+
+.slider_item img {
+    width: 100%;
+    height: auto;
+}
+
+.slider_item span {
+    display: block;
+    text-align: center;
+}

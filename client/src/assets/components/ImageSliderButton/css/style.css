@@ -119,6 +119,10 @@
   align-items: center;
 }
 
+button{
+  
+}
+
 @media screen and (max-width:550px) {
   .button-slider {
     /* position: absolute;
